@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Global - Documentation</title>
+    <title>Academy - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Global</h1>
+    <h1 class="page-title">Academy</h1>
     
 
     
@@ -48,8 +48,10 @@
 <header>
     
         <h2>
+            <span class="ancestors"><a href="Models.html">Models</a>.</span>
         
-            
+        
+            Namespace
         
         </h2>
         
@@ -62,11 +64,45 @@
         
             
 
+
+    
+
+    <h4 class="name" id="Academy">Academy</h4>
+
+    
+
+
+
+
 <dl class="details">
     
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>아카데미; academy document는 루트 DB에 저장되며 academy 관련 도큐먼트는 아카데미 DB에 저장된다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Indexes</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">_id</td>
+<td>UNIQUE</td>
+</tr>
+<tr>
+<td style="text-align:left">academyId_1</td>
+<td>UNIQUE</td>
+</tr>
+</tbody>
+</table></li></ul></dd>
+    
 
     
 
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>2.0.0</li></ul></dd>
     
 
     
@@ -101,9 +137,32 @@
 
 
 
-            
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         </div>
     
@@ -121,20 +180,21 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
 
         
-            
-<h4 class="name" id="archiveMulter"><span class="type-signature type-signature-constant">(constant) </span>archiveMulter<span class="type-signature"></span></h4>
+                
+<h4 class="name" id=".TAcademy">TAcademy</h4>
 
 
 
 
 
 <dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/{academyId}/archive/{randomString}.jpg&quot;</p></li></ul></dd>
     
 
     
@@ -172,86 +232,273 @@
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
+    
 
-<div class="description usertext">
-    <p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/{academyId}/archive/{randomString}.jpg&quot;</p>
-</div>
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
 
-
-
-
-
-
-
+        <th>Type</th>
 
         
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<h4 class="name" id="profileMulter"><span class="type-signature type-signature-constant">(constant) </span>profileMulter<span class="type-signature"></span></h4>
+                <td class="name"><code>academyId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
 
 
 
+            
+            </td>
 
+            
 
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/original/{user._id}/abc.jpg&quot; and AWS Lambda will copy this as &quot;{bucket}/thumb/{user._id}/abc.jpg&quot;</p></li></ul></dd>
-    
+            
+                <td class="default">
+                
+                </td>
+            
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+            <td class="description last"><p>아카데미 ID; validate</p></td>
+        </tr>
 
     
 
-    
+        <tr>
+            
+                <td class="name"><code>academyName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>아카데미 이름; validate</p></td>
+        </tr>
 
     
 
-    
+        <tr>
+            
+                <td class="name"><code>email</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>validate</p></td>
+        </tr>
 
     
 
-    
+        <tr>
+            
+                <td class="name"><code>tel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>validate</p></td>
+        </tr>
 
     
 
-    
+        <tr>
+            
+                <td class="name"><code>adminId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>validate</p></td>
+        </tr>
 
     
-</dl>
+
+        <tr>
+            
+                <td class="name"><code>adminName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
 
 
 
+            
+            </td>
 
+            
 
-<div class="description usertext">
-    <p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/original/{user._id}/abc.jpg&quot; and AWS Lambda will copy this as &quot;{bucket}/thumb/{user._id}/abc.jpg&quot;</p>
-</div>
+            
+                <td class="default">
+                
+                </td>
+            
 
+            <td class="description last"><p>validate</p></td>
+        </tr>
 
-
-
-
-
-
-
-        
     
 
+        <tr>
+            
+                <td class="name"><code>dbName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>아카데미 DB명; 아카데미 생성 시 자동 설정되며 API를 통해 조회할 수 없다</p></td>
+        </tr>
+
     
 
+        <tr>
+            
+                <td class="name"><code>isActivated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>아카데미 활성화 상태; false인 경우 해당 아카데미에 로그인할 수 없다</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
     
 
     

@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>*API - Documentation</title>
+    <title>Enrollment - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">*API</h1>
+    <h1 class="page-title">Enrollment</h1>
     
 
     
@@ -48,7 +48,7 @@
 <header>
     
         <h2>
-            <span class="ancestors"><a href="APIs.html">APIs</a>.</span>
+            <span class="ancestors"><a href="Models.html">Models</a>.</span>
         
         
             Namespace
@@ -67,7 +67,7 @@
 
     
 
-    <h4 class="name" id="*API">*API</h4>
+    <h4 class="name" id="Enrollment">Enrollment</h4>
 
     
 
@@ -77,11 +77,36 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>*API namespace</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>수강 정보</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Indexes</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">_id</td>
+<td>UNIQUE</td>
+</tr>
+<tr>
+<td style="text-align:left">student_1_season_1</td>
+<td>COMPOUND</td>
+</tr>
+<tr>
+<td style="text-align:left">syllabus_1_student_1</td>
+<td>UNIQUE; COMPOUND</td>
+</tr>
+</tbody>
+</table></li></ul></dd>
     
 
     
 
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>2.0.0</li></ul></dd>
     
 
     
@@ -161,31 +186,23 @@
     
 
     
-        <h3 class="subsection-title">Methods</h3>
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
 
         
-            
+                
+<h4 class="name" id=".TEnrollment">TEnrollment</h4>
 
-    
-
-    <h4 class="name" id=".*common"><span class="type-signature type-signature-static">(static) </span>*common<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
-
-    
 
 
 
 
 <dl class="details">
     
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>모든 API에 공통적으로 적용됨</p></li></ul></dd>
-    
 
     
 
-    
-    <dt class="tag-version">Version:</dt>
-    <dd class="tag-version"><ul class="dummy"><li>2.0.0</li></ul></dd>
     
 
     
@@ -219,20 +236,11 @@
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
     
 
-<table class="params">
+<table class="props">
     <thead>
     <tr>
         
@@ -242,7 +250,11 @@
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
+        
+        <th>Default</th>
         
 
         <th class="last">Description</th>
@@ -254,13 +266,13 @@
 
         <tr>
             
-                <td class="name"><code>req</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">ObjectId</span>
 
 
 
@@ -268,7 +280,17 @@
             </td>
 
             
+                <td class="attributes">
+                
 
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
             
 
             <td class="description last"></td>
@@ -278,7 +300,551 @@
 
         <tr>
             
-                <td class="name"><code>res</code></td>
+                <td class="name"><code>syllabus</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ObjectId</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus._id</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>season</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ObjectId</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus._id</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>school</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.school</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>schoolId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.schoolId</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>schoolName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.schoolName</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.year</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>term</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.term</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ObjectId</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus._id; 수업 개설자</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.userId</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.userName</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>classTitle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.classTitle</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>time</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.classTitle</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>classroom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.classTitle</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.subject</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>point</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.point</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.limit</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>info</code></td>
             
 
             <td class="type">
@@ -292,10 +858,296 @@
             </td>
 
             
+                <td class="attributes">
+                
 
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.info</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>teachers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>syllabus.teachers</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>student</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ObjectId</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>student(user)._id; 수강생</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>studentId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>student(user).userId</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>studentName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>student(user).userName</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>grade</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>registration.grade</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>evaluation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>평가; ex) {멘토평가: &quot;asdf&quot;, 자기평가: 'asdf}; 암호화되어 저장되며 특정 API 이외에는 응답값에 evaluation을 포함하지 않는다</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>memo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                    &lt;nullable><br>
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
             
 
             <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isHiddenFromCalendar</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>false</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>캘린더에서 숨김 설정</p></td>
         </tr>
 
     
@@ -314,67 +1166,7 @@
 
 
 
-
-<h5 class="h5-throws">Throws:</h5>
-
-        
-
-    <div class="param-desc usertext">
-    
-        <table>
-<thead>
-<tr>
-<th style="text-align:left">status</th>
-<th style="text-align:left">message</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">400</td>
-<td style="text-align:left">{field}_REQUIRED</td>
-<td style="text-align:left">if parameter {field} is not given</td>
-</tr>
-<tr>
-<td style="text-align:left">400</td>
-<td style="text-align:left">{field}_INVALID</td>
-<td style="text-align:left">if parameter {field} is invalid</td>
-</tr>
-<tr>
-<td style="text-align:left">403</td>
-<td style="text-align:left">NOT_LOGGED_IN</td>
-<td style="text-align:left">if user is not logged in</td>
-</tr>
-<tr>
-<td style="text-align:left">403</td>
-<td style="text-align:left">ALREADY_LOGGED_IN</td>
-<td style="text-align:left">if user is already logged in</td>
-</tr>
-<tr>
-<td style="text-align:left">403</td>
-<td style="text-align:left">PERMISSION_DENIED</td>
-<td style="text-align:left">if user has no permission</td>
-</tr>
-<tr>
-<td style="text-align:left">500</td>
-<td style="text-align:left">Internal Server Error</td>
-<td style="text-align:left">if server has no handler to this error</td>
-</tr>
-</tbody>
-</table>
-    
-    </div>
-
-
-    
-
-
-
-
-
-        
-    
-
+            
     
 
     

@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Global - Documentation</title>
+    <title>Syllabus - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Global</h1>
+    <h1 class="page-title">Syllabus</h1>
     
 
     
@@ -48,8 +48,10 @@
 <header>
     
         <h2>
+            <span class="ancestors"><a href="Models.html">Models</a>.</span>
         
-            
+        
+            Namespace
         
         </h2>
         
@@ -62,11 +64,45 @@
         
             
 
+
+    
+
+    <h4 class="name" id="Syllabus">Syllabus</h4>
+
+    
+
+
+
+
 <dl class="details">
     
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>강의계획서</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Indexes</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">_id</td>
+<td>UNIQUE</td>
+</tr>
+<tr>
+<td style="text-align:left">season_1</td>
+<td></td>
+</tr>
+</tbody>
+</table></li></ul></dd>
+    
 
     
 
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>2.0.0</li></ul></dd>
     
 
     
@@ -101,9 +137,32 @@
 
 
 
-            
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         </div>
     
@@ -121,20 +180,21 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
 
         
-            
-<h4 class="name" id="archiveMulter"><span class="type-signature type-signature-constant">(constant) </span>archiveMulter<span class="type-signature"></span></h4>
+                
+<h4 class="name" id=".TSyllabus">TSyllabus</h4>
 
 
 
 
 
 <dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/{academyId}/archive/{randomString}.jpg&quot;</p></li></ul></dd>
     
 
     
@@ -172,31 +232,593 @@
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
+    
 
-<div class="description usertext">
-    <p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/{academyId}/archive/{randomString}.jpg&quot;</p>
-</div>
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
 
-
-
-
-
-
-
+        <th>Type</th>
 
         
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<h4 class="name" id="profileMulter"><span class="type-signature type-signature-constant">(constant) </span>profileMulter<span class="type-signature"></span></h4>
+                <td class="name"><code>_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ObjectId</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>season</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ObjectId</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>season._id</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>school</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>season.school</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>schoolId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>season.schoolId</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>schoolName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>season.schoolName</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>season.year</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>term</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>season.term</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ObjectId</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>user._id; 수업 개설자</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>user.userId</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>user.userName</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>classTitle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>제목</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>time</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;TTimeBlock></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>시간</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>classroom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>강의실</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>교과목</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>point</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>학점</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>수강정원; 0인 경우 수강 제한 없음</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>수강생 수</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>info</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>세부정보; 에디터에 의해 설정된다</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>teachers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;TTeacher></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>멘토 목록</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+<h4 class="name" id=".TTeacher">TTeacher</h4>
 
 
 
 
 
 <dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/original/{user._id}/abc.jpg&quot; and AWS Lambda will copy this as &quot;{bucket}/thumb/{user._id}/abc.jpg&quot;</p></li></ul></dd>
     
 
     
@@ -234,24 +856,371 @@
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
+    
 
-<div class="description usertext">
-    <p>Upload file &quot;abc.jpg&quot; as &quot;{bucket}/original/{user._id}/abc.jpg&quot; and AWS Lambda will copy this as &quot;{bucket}/thumb/{user._id}/abc.jpg&quot;</p>
-</div>
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
 
-
-
-
-
-
-
+        <th>Type</th>
 
         
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>ex) teacher(user)._id</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>ex) teacher(user).userId</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>ex) teacher(user).userName</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>confirmed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>false</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>승인 상태</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isHiddenFromCalendar</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>false</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>캘린더에서 숨김 설정</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+<h4 class="name" id=".TTimeBlock">TTimeBlock</h4>
+
+
+
+
+
+<dl class="details">
     
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>label</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>ex) 월8</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>day</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>ex) 월</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>ex) &quot;10:00&quot;</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>ex) &quot;11:00&quot;</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
     
 
     
